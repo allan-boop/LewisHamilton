@@ -7,7 +7,8 @@
 .navBar {
   position: sticky;
   top: 0px;
-  background: #eae8ef;
+  background: hsl(0, 0%, 93%);
+
   height: 7rem;
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,7 @@
 .navBar img {
   margin: 1rem;
   height: 5rem;
+  padding: 2px;
 }
 li {
   padding-bottom: 0.5rem;

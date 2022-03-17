@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  color: #00ae9d;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  width: 100%;
+}
+/*-------------NAVBAR-----------------*/
+.navBar {
+  position: sticky;
+  top: 0px;
+  background: #eae8ef;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navBar img {
+  margin: 1rem;
+  height: 5rem;
+}
+li {
+  padding-bottom: 0.5rem;
+}
+.navBar li a {
+  text-decoration: none;
+}
+.navBar li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+.menu-deroulant {
+  margin-top: 1rem;
+  height: auto;
+  width: 5rem;
+  height: 2rem;
+  list-style-type: none;
+  border-radius: 15%;
+}
+
+.sous-menu {
+  list-style-type: none;
+  text-decoration: none;
+  display: none;
+  margin-left: 22%;
+  margin-top: 1rem;
+}
+.sous-menu li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.visible {
+  display: block;
+  background-color: #eae8ef;
+  border-radius: 15px;
+}
+
+/*--------------------MAIN-----------------*/
+.box {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box div {
+  width: 100%;
+  text-align: center;
+  background: rgb(10 10 14 / 69%);
+}
+.caracteristique {
+  border-radius: 30px 30px 0 0;
+  margin-top: 5rem;
+  height: 5.5rem;
+}
+table {
+  width: 100%;
+}
+table th {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.firstTD {
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+}
+.imgVehicule {
+  border-radius: 0 0 30px 30px;
+}
+.imgVehicule img {
+  width: 98%;
+  border: solid;
+  border-radius: 30px;
+  box-shadow: 0px 2px 15px 1px #00ae9d;
+}

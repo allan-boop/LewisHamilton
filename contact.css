@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-style-8 {
+  width: 250px;
+  padding: 30px;
+  background: #ffffff;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
+.form-style-8 h2 {
+  background: #4d4d4d;
+  text-transform: uppercase;
+  color: #faf8f8;
+  font-size: 13px;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="email"],
+.form-style-8 textarea,
+.form-style-8 select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  height: 45px;
+}
+.form-style-8 input[type="button"],
+.form-style-8 input[type="submit"] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #45d6d6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45d6d6;
+  box-shadow: inset 0px 1px 0px 0px #45d6d6;
+  background-color: #2cbbbb;
+  border: 1px solid;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover,
+.form-style-8 input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #34caca 5%, #30c9c9 100%);
+  background-color: #00ae9d;
+}

@@ -12,31 +12,44 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
   <title>Formulaire Lewis Hamilton</title>
 </head>
-<nav class="uk-navbar-container" uk-navbar>
-  <div class="uk-navbar-left">
 
+
+
+<!--   Navbar  --> 
+<nav class="uk-navbar-container" uk-navbar>
+    
+  <div class="uk-navbar-left">
     <ul class="uk-navbar-nav">
 
       <li>
-        <a href="#"><span uk-icon="menu"></span>Menu</a>
+        <a href="#"><span id="icon" uk-icon="menu"></span>Menu</a>
         <div class="uk-navbar-dropdown">
           <ul class="uk-nav uk-navbar-dropdown-nav">
-
             <li><a href="index.html">Home</a></li>
             <li><a href="vehicule.html">Vehicule</a></li>
             <li><a href="contact.html">Contact</a></li>
-
           </ul>
         </div>
       </li>
-
     </ul>
-
+  </div>
+  <div class="uk-navbar-right">
+    <a class="uk-navbar-item uk-logo" href="#"><img src="assets/thumb.png" alt="logo 2" class="yk-logo" /></a>
+  </div>
 </nav>
 
 <body>
-  <div class="form-style-8">
-    <h2>Contact To Lewis Hamilton</h2>
+  <!--  formulaire de contacte  --> 
+
+  <h1 class="uk-heading-line uk-text-center"><span> Contact  Lewis Hamilton</span></h1>
+
+
+
+
+
+
+  <div class="form-style-8" >
+ 
     <form>
       <input type="text" name="field1" placeholder=" Name" />
       <input type="email" name="field2" placeholder="Email" />
@@ -45,11 +58,17 @@
       <input type="button" value="Send Message" />
     </form>
   </div>
+
+
   <div class="footer-basic">
     <footer>
       <div class="social">
         <a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a>
       </div>
+
+
+
+
       <div class="footermessage">
         <script>
           aleatoire = Math.floor(Math.random() * 5);

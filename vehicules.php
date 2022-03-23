@@ -1,3 +1,6 @@
+<?php
+include('./data.php');
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -12,6 +15,7 @@
   />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
   <body>
     <div class="navBar">
@@ -19,47 +23,37 @@
         <button class="menu-deroulant">Menu</button>
         <div class="sous-menu">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/vehicule.html">Véhicule</a></li>
+          <li><a href="/vehicules.html">Véhicule</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </div>
       </ul>
       <script src="./index.js"></script>
       <img src="assets/thumb.png" alt="logo 2" class="logo" />
     </div>
-
-
-
 <!------------------------Main--------------------------------------------->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/voiture1.jpeg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Mercedes AMG F1 W11 EQ performance</h5>
-          <p>Poid: 746Kg</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/voiture2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Mercedes AMG F1 W10 EQ power+</h5>
-          <p>Poid: 743Kg</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="assets/w09.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Mercedes AMG F1 W09 EQ power+</h5>
-          <p>Poid: 733Kg</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+<?php
+foreach($data as $title => $vehicules){   
+  echo '<h1 class="display-3">'.$title.'</h1>';
+  echo '<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">';
+    echo '<div class="carousel-indicators">';
+      echo '<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>';
+      echo '<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>';
+      echo '<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>';
+    echo '</div>';
+    echo '<div class="carousel-inner">';
+      foreach($vehicules[0] as $modele => $caracteristiques){
+        echo '<div class="carousel-item '.$caracteristiques['isActive'].'">';
+          echo '<img src="./assets/'.$caracteristiques['image'].'" class="d-block w-100" alt="...">';
+          echo '<div class="carousel-caption d-none d-md-block">';
+            echo '<h5>'.$modele.'</h5>';
+            echo '<p>poids : '.$caracteristiques['Poid'].'</p>';
+          echo '</div>';
+        echo '</div>';
+      }
+    echo '</div>';
+}
+?>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">

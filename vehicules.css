@@ -6,62 +6,14 @@
 
 /*----------------------- Navbar -----------------------------*/
 
-.navBar {
-    position: sticky;
-    top: 0px;
-    background: hsl(0, 0%, 93%);
-    z-index: 10;
-    height: 7rem;
-    display: flex;
-    justify-content: space-between;
+#icon {
+    color: #00ae9d;
 }
 
-.navBar img {
-    margin: 1rem;
-    height: 5rem;
-    padding: 2px;
-}
-
-li {
-    padding-bottom: 0.5rem;
-}
-
-.navBar li a {
-    text-decoration: none;
-    color: black;
-}
-
-.navBar li a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.25rem;
-}
-
-.menu-deroulant {
-    margin-top: 1rem;
-    height: auto;
+.yk-logo {
     width: 5rem;
-    height: 2rem;
-    list-style-type: none;
-    border-radius: 15%;
-    color: black;
 }
 
-.sous-menu {
-    list-style-type: none;
-    text-decoration: none;
-    display: none;
-    margin-left: 22%;
-    margin-top: 1rem;
-}
-
-.sous-menu li:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.25rem;
-}
-
-.visible {
-    display: block;
-}
 
 /*--------------MAIN----------------------*/
 h1 {

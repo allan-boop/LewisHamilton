@@ -9,6 +9,8 @@ include('./assets/data.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lewis Hamilton</title>
     <link href="vehicules.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/css/uikit.min.css" />
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
@@ -17,19 +19,29 @@ include('./assets/data.php');
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+<!----------------------------------NAVBAR------------------------------------------->
   <body>
-    <div class="navBar">
-      <ul>
-        <button class="menu-deroulant">Menu</button>
-        <div class="sous-menu">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/vehicules.html">Véhicule</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </div>
+  <nav class="uk-navbar-container" uk-navbar>
+    
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+  
+        <li>
+          <a href="#"><span id="icon" uk-icon="menu"></span>Menu</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="vehicules.php">Vehicule</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </li>
       </ul>
-      <script src="./index.js"></script>
-      <img src="assets/thumb.png" alt="logo 2" class="logo" />
     </div>
+    <div class="uk-navbar-right">
+    <a class="uk-navbar-item uk-logo" href="#"><img src="assets/thumb.png" alt="logo 2" class="yk-logo" /></a>
+  </div>
+  </nav>
 <!------------------------Main--------------------------------------------->
 <?php
 foreach($data as $title => $vehicules){   
@@ -99,6 +111,10 @@ foreach($data as $title => $vehicules){
 </div>
         <p class="copyright">Lewis Hamilton© 2022</p>
       </footer>  
+      <script src="uikit/dist/js/uikit-icons.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" charset="utf-8"></script> 
 </body>
 </html>

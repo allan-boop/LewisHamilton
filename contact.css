@@ -2,32 +2,23 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
+#icon {
+  color: #00ae9d;
+}
 
 .form-style-8 {
-  width: 250px;
+  width: 40%;
   padding: 30px;
   background: #ffffff;
   margin: 50px auto;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 
-.form-style-8 h2 {
-  background: #4d4d4d;
-  text-transform: uppercase;
-  color: #faf8f8;
-  font-size: 13px;
-  padding: 20px;
-  margin: -30px -30px 30px -30px;
-}
 .form-style-8 input[type="text"],
 .form-style-8 input[type="email"],
 .form-style-8 textarea,
 .form-style-8 select {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   outline: none;
   display: block;
   width: 100%;
@@ -40,8 +31,6 @@
 }
 .form-style-8 input[type="button"],
 .form-style-8 input[type="submit"] {
-  -moz-box-shadow: inset 0px 1px 0px 0px #45d6d6;
-  -webkit-box-shadow: inset 0px 1px 0px 0px #45d6d6;
   box-shadow: inset 0px 1px 0px 0px #45d6d6;
   background-color: #2cbbbb;
   border: 1px solid;

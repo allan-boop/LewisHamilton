@@ -1,5 +1,5 @@
 <?php
-include('./data.php');
+include('./assets/data.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
